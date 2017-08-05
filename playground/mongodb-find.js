@@ -15,12 +15,6 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
 
     // });
 
-    db.collection('Users').find({name: 'fag'}).count().then((count) => {
-        console.log(`number of fags = ${count}`);
-    }, (err) => {
-        console.log('Some error', err);
-    });
-
     // db.close();
 
 });
